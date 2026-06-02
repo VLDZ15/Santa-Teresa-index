@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+<title>Santa Teresa</title>
+
+	</head>
+	
+<body background="fondo4.avif" class="margin">
+	
+<style>
+
+	body {
+		margin-top: 30px;
+		margin-right: 190px;
+		margin-bottom: 30px;
+		margin-left: 190px;
+	}
+	</style>
+	
+	<p>Visitas:<span id="contador">0</span></p>
+	<script>
+	let visitas =
+	localStorage.getItem("visitas");
+		if(visitas == null) {
+			visitas = 0;
+		}
+		
+		visitas++;
+		localStorage.setItem("visitas", visitas);
+		document.getElementById("contador").textContent = visitas;
+	</script>
+	
+	
+<h1 style="background: hsla(0,0%,82%,1.00)" align="center"><em style="background-color: ">BIENVENIDOS</em></h1>
+	
+	<p align="justify" style="font-size: 20px;">En este sitio les hablaremos sobre el ejido de <em>Santa Teresa Papaloapan, Tuxtepec, Oax</em>, una pequeña comunidad en la Cuenca del Papaloapan cerca de la frontera entre Oaxaca y Veracruz. Es una localidad rural caracterizada por su historia, por su tranquilidad, cumunidad unida, tradiciones, su ubicación geografica  que es muy importante para el sector agrícola ya que es una de las comunidades con mayor producción de platano macho en la región. Los invitamos a explorar y conocer un poco sobre esta bella comunida, llena de tradiciones y cultura.</p>
+	
+	<p style="font-size: 20px;">Los temas de los que hablaremos en especial son los siguientes:</p>
+	
+	<div>
+	<a href="economia.html"><ul style="font-size: 20px;"><u>Economia</u></ul></a>
+	<a href="lugares de interes.html"><ul style="font-size: 20px;"><u>Lugares de interes</u></ul></a>
+	<a href="historia.html"><ul style="font-size: 20px;"><u>Historia</u></ul></a>
+	</div>
+		
+	<div align="center"><img src="ubicacion.png" width="400" height="300" alt=""/></div> 
+	
+	
+	
+	<audio controls autoplay loop>
+	<source src="audio.mpeg">
+	</audio>
+
+</body>
+</html>
